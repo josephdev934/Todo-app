@@ -11,11 +11,8 @@ const User = require("./models/user");
 
 const app = express();
 
-// MongoDB Connection
-mongoose.connect(process.env.MONGODB_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
+// MongoDB Connection (without deprecated options)
+mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log("✅ Connected to MongoDB successfully"))
   .catch((err) => console.error("❌ MongoDB connection error:", err));
 
@@ -39,13 +36,18 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-// Flash
+// Flash messages
 app.use(flash());
 app.use((req, res, next) => {
   res.locals.success = req.flash("success");
   res.locals.error = req.flash("error");
   res.locals.user = req.user || null;
   next();
+});
+
+// Root route - sanity check
+app.get("/", (req, res) => {
+  res.send("Todo App is running!");
 });
 
 // Routes
