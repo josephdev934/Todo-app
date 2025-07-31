@@ -5,6 +5,8 @@ const passport = require("passport");
 const LocalStrategy = require("passport-local");
 const flash = require("connect-flash");
 const session = require("express-session");
+require('dotenv').config();
+
 
 const User = require("./models/user");
 
