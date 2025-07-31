@@ -1,17 +1,20 @@
 {
   "name": "todo_app",
   "version": "1.0.0",
-  "description": "to create a todo list that users can store their daily routines add rember it",
+  "description": "To create a todo list that users can store their daily routines and reminders",
   "repository": {
     "type": "git",
-    "url": "Todo App"
+    "url": "https://github.com/josephdev934/todo-app.git"
   },
   "license": "ISC",
   "author": "Joseph Akujieze",
   "type": "commonjs",
   "main": "app.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
-  "start": "node app.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "connect-flash": "^0.1.1",
