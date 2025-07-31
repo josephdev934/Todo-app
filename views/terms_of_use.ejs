@@ -1,0 +1,61 @@
+<%- include("partials/header") %>
+
+<div class="max-w-3xl mx-auto px-6 py-12 animate-skew-up">
+  <h1 class="text-3xl font-bold text-orange-600 mb-4">Terms of Use</h1>
+
+  <p class="text-gray-700 mb-4">
+    Welcome to the <strong>SephWares Todo App</strong>. By using our service, you agree to the following terms and conditions. Please read them carefully.
+  </p>
+
+  <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">1. Use of the App</h2>
+  <p class="text-gray-700 mb-4">
+    This app is provided for personal and professional task management. You agree not to use the app for any unlawful or harmful purpose.
+  </p>
+
+  <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">2. Account Responsibility</h2>
+  <p class="text-gray-700 mb-4">
+    You are responsible for maintaining the security of your account and password. You agree to notify us immediately of any unauthorized use.
+  </p>
+
+  <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">3. User Content</h2>
+  <p class="text-gray-700 mb-4">
+    All tasks and content you create within the app remain yours. However, you grant us permission to store and display your tasks as part of the service.
+  </p>
+
+  <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">4. Data Accuracy</h2>
+  <p class="text-gray-700 mb-4">
+    While we strive to provide a reliable service, we cannot guarantee complete accuracy or uptime. You use the app at your own risk.
+  </p>
+
+  <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">5. Modification and Termination</h2>
+  <p class="text-gray-700 mb-4">
+    We reserve the right to modify or discontinue the service at any time without notice. We may also terminate access for users who violate these terms.
+  </p>
+
+  <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">6. Limitation of Liability</h2>
+  <p class="text-gray-700 mb-4">
+    SephWares is not liable for any indirect, incidental, or consequential damages arising from the use of the app.
+  </p>
+
+  <p class="text-gray-700">
+    These terms may be updated from time to time. Continued use of the app implies acceptance of any changes. For questions, please contact the developer, <strong>Joseph Akujieze</strong>.
+  </p>
+</div>
+
+<%- include("partials/footer") %>
+
+<style>
+@keyframes skewUp {
+  0% {
+    transform: skewY(5deg) translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: skewY(0deg) translateY(0);
+    opacity: 1;
+  }
+}
+.animate-skew-up {
+  animation: skewUp 0.8s ease-out forwards;
+}
+</style>

@@ -1,0 +1,71 @@
+<%- include("partials/header") %>
+
+<div class="max-w-3xl mx-auto px-6 py-12 animate-skew-up">
+  <h1 class="text-3xl font-bold text-orange-600 mb-4">Privacy Policy</h1>
+
+  <p class="text-gray-700 mb-4">
+    At <strong>SephWares Todo App</strong>, we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data while you use our application.
+  </p>
+
+  <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">1. Information We Collect</h2>
+  <p class="text-gray-700 mb-4">
+    We collect the following information:
+    <ul class="list-disc list-inside text-gray-700 ml-4">
+      <li>Your name and email during registration</li>
+      <li>Tasks you create, edit, or delete</li>
+      <li>Login activity and timestamps</li>
+    </ul>
+  </p>
+
+  <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">2. How We Use Your Information</h2>
+  <p class="text-gray-700 mb-4">
+    Your information is used to:
+    <ul class="list-disc list-inside text-gray-700 ml-4">
+      <li>Provide personalized access to your tasks</li>
+      <li>Securely authenticate users and manage permissions</li>
+      <li>Enable admin control where necessary</li>
+    </ul>
+  </p>
+
+  <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">3. Data Security</h2>
+  <p class="text-gray-700 mb-4">
+    We use modern security practices including password encryption, session management, and role-based access control. Your data is stored securely in a protected database.
+  </p>
+
+  <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">4. Third-Party Access</h2>
+  <p class="text-gray-700 mb-4">
+    We do not share your personal information with third parties. All data remains within our secure system unless required by law.
+  </p>
+
+  <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">5. Your Rights</h2>
+  <p class="text-gray-700 mb-4">
+    You have the right to:
+    <ul class="list-disc list-inside text-gray-700 ml-4">
+      <li>Access, update, or delete your account information</li>
+      <li>Request the removal of all your stored tasks</li>
+      <li>Contact us for any privacy concerns or issues</li>
+    </ul>
+  </p>
+
+  <p class="text-gray-700">
+    By using the SephWares Todo App, you agree to this policy. For questions, please contact the developer at <strong>Joseph Akujieze</strong>.
+  </p>
+</div>
+
+<%- include("partials/footer") %>
+
+<style>
+@keyframes skewUp {
+  0% {
+    transform: skewY(5deg) translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: skewY(0deg) translateY(0);
+    opacity: 1;
+  }
+}
+.animate-skew-up {
+  animation: skewUp 0.8s ease-out forwards;
+}
+</style>

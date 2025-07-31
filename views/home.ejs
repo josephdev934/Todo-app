@@ -1,0 +1,50 @@
+<%- include("partials/header") %>
+<!-- Hero Section -->
+<video autoplay muted loop playsinline class="fixed top-0 left-0 w-full h-full object-cover -z-10">
+  <source src="/videos/13349862_1080_1920_25fps.mp4" type="video/mp4" />
+</video>
+
+
+<section class="animated-bg text-center py-16 px-4 text-slate-800 shadow-inner">
+  <h1 class="text-4xl font-bold mb-4">
+    Welcome to Sephwares Todo App 📝
+  </h1>
+  <p class="text-lg max-w-3xl mx-auto mb-6">
+    Boost your productivity and stay on top of your goals. Sephwares Todo App helps you organize tasks, manage priorities, and accomplish more — every day.
+  </p>
+  <a href="/signUp" class="bg-slate-900 text-white px-6 py-3 rounded shadow hover:bg-slate-800 transition duration-300">
+    Create Your Account
+  </a>
+</section>
+
+
+<!-- Create Todo List Section -->
+<section class="max-w-4xl mx-auto mt-12 px-4 py-10 bg-orange-50 border-l-4 border-orange-400 rounded-md shadow animate-skew-up">
+  <h2 class="text-2xl font-bold text-orange-600 mb-4">Create Your Todo List</h2>
+  <p class="text-gray-700 mb-4">
+    Ready to start organizing your day? With just a few clicks, you can create your first todo list, add tasks, set deadlines, and stay accountable.
+  </p>
+  <a href="/todoList" class="inline-block bg-orange-500 text-white px-5 py-2 rounded hover:bg-orange-600 transition">
+    Create a Todo List
+  </a>
+</section>
+
+<!-- Features Section -->
+<section class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-3 gap-8 text-center">
+  <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+    <h3 class="text-xl font-semibold text-orange-500 mb-2">Fast & Simple</h3>
+    <p class="text-gray-600">Easily create, update, and manage your tasks with an intuitive interface.</p>
+  </div>
+  <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+    <h3 class="text-xl font-semibold text-orange-500 mb-2">Secure Login</h3>
+    <p class="text-gray-600">Enjoy peace of mind with verified email access and protected user accounts.</p>
+  </div>
+  <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+    <h3 class="text-xl font-semibold text-orange-500 mb-2">Works Everywhere</h3>
+    <p class="text-gray-600">Fully responsive design ensures a smooth experience on phones, tablets, and desktops.</p>
+  </div>
+</section>
+
+
+
+<%- include("partials/footer") %>

@@ -1,0 +1,42 @@
+<%- include("partials/header") %>
+
+<div class="max-w-3xl mx-auto px-6 py-12 animate-skew-up">
+  <h1 class="text-3xl font-bold text-orange-600 mb-4">About SephWares Todo App</h1>
+  <p class="text-gray-700 mb-4">
+    SephWares Todo App is a powerful yet minimal task manager designed to help individuals and teams stay organized and productive. Whether you’re planning your day, managing a project, or setting goals, our todo app provides the clarity and tools you need to succeed.
+  </p>
+
+  <p class="text-gray-700 mb-4">
+    Our goal is to make task management simple, clean, and effective. The app allows you to create, edit, delete, and organize your todos in a user-friendly environment. Features like deadline countdowns, task alarms, and visual progress feedback keep you focused and on track.
+  </p>
+
+  <p class="text-gray-700 mb-4">
+    Built with modern web technologies like Node.js, Express, MongoDB, Passport.js, and EJS, the SephWares Todo App also incorporates Tailwind CSS for an elegant and responsive interface. It supports secure authentication, role-based access (admin and users), and even background video aesthetics to enhance your productivity experience.
+  </p>
+
+  <p class="text-gray-700 mb-4">
+    You can register, log in, and manage your todos seamlessly. Admins have additional privileges to maintain app integrity. Each task is tagged with the creator’s name and supports real-time editing and deletion, giving you full control over your productivity flow.
+  </p>
+
+  <p class="text-gray-700">
+    Designed and developed by <strong>Joseph Akujieze</strong>, this project represents a passion for building helpful tools that make everyday life more manageable. Thank you for using SephWares Todo App — your smart companion for getting things done!
+  </p>
+</div>
+
+<%- include("partials/footer") %>
+
+<style>
+@keyframes skewUp {
+  0% {
+    transform: skewY(5deg) translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: skewY(0deg) translateY(0);
+    opacity: 1;
+  }
+}
+.animate-skew-up {
+  animation: skewUp 0.8s ease-out forwards;
+}
+</style>
