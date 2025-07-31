@@ -9,8 +9,18 @@ const session = require("express-session");
 const User = require("./models/user");
 
 const app = express();
-mongoose.connect(process.env.MONGODB_URI)
 
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  tls: true,
+})
+.then(() => {
+  console.log("Connected to MongoDB successfully");
+})
+.catch((err) => {
+  console.error("Error connecting to MongoDB:", err);
+});
 
 // Middlewares
 app.set("view engine", "ejs");
@@ -44,6 +54,7 @@ app.use("/", require("./routes/index"));
 app.use("/", require("./routes/auth"));
 app.use("/", require("./routes/todos"));
 
-app.listen(3000, () => {
-  console.log("Todo App server started on port 3000");
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Todo App server started on port ${PORT}`);
 });
