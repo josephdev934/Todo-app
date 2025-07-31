@@ -9,7 +9,8 @@ const session = require("express-session");
 const User = require("./models/user");
 
 const app = express();
-mongoose.connect("mongodb://localhost/todo_lists");
+mongoose.connect(process.env.MONGODB_URI)
+
 
 // Middlewares
 app.set("view engine", "ejs");
