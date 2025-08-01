@@ -30,7 +30,7 @@
           <a href="/about" class="text-orange-500 font-semibold hover:text-orange-700 transition">About</a>
           <% if(user) { %>
             <p class="text-orange-500 font-semibold hover:text-orange-700 transition">
-              <i class="fas fa-user text-white"></i> <%= user.username %>
+              <a class="text-orange-500 font-semibold hover:text-orange-700 transition" href="/todoList"><i class="fas fa-user text-white"></i> <%= user.username %></a>
             </p>
             <a href="/Logout" class="text-orange-500 font-semibold hover:text-orange-700 transition">Log out</a>
           <% } else { %>
