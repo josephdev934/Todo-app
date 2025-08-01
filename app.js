@@ -45,10 +45,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// Root route - sanity check
-app.get("/", (req, res) => {
-  res.send("Todo App is running!");
-});
+
 
 // Routes
 app.use("/", require("./routes/index"));
